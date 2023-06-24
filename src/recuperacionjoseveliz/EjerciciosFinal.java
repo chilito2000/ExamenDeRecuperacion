@@ -2,9 +2,8 @@
 package recuperacionjoseveliz;
 
 
-
-
 public class EjerciciosFinal {
+
       public static void main(String[] args) {
     private String nombreClase;
     private String tipoEjercicios;

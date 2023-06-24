@@ -31,7 +31,7 @@ public class ClaseHijaFinal {
         ClaseHijaFinal hija = new ClaseHijaFinal();
 
    
-        System.out.print("Ingrese el nombre de la hija: ");
+        System.out.print("Ingrese el nombre: ");
         String nombre = scanner.nextLine();
         hija.setNombreHija(nombre);
 
@@ -41,7 +41,7 @@ public class ClaseHijaFinal {
         hija.setCantidadEjercicios(cantidad);
 
        
-        System.out.println("Nombre de la hija: " + hija.getNombreHija());
+        System.out.println("Nombre: " + hija.getNombreHija());
         System.out.println("Cantidad de ejercicios: " + hija.getCantidadEjercicios());
     
         int[] numeros = {2, 3, 4, 5, 6, 7};

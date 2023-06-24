@@ -9,10 +9,8 @@ package recuperacionjoseveliz;
  * @author Jose veliz
  */
 public class PanelRecuperacion extends javax.swing.JFrame {
+ClaseHijaFinal hija=new ClaseHijaFinal("");
 
-    /**
-     * Creates new form PanelRecuperacion
-     */
     public PanelRecuperacion() {
         initComponents();
     }
@@ -51,10 +49,20 @@ public class PanelRecuperacion extends javax.swing.JFrame {
         jTextField2.setText("jTextField2");
 
         jButton1.setText("Agregar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jTextField3.setText("jTextField3");
 
         jButton2.setText("Resolver");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jTextField4.setText("jTextField4");
 
@@ -109,6 +117,18 @@ public class PanelRecuperacion extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+       double resultado= hija.cantidadEjercicios(getCantidadEjercicios();       
+       jTextField3.setText(String.valueOf(resultado)); 
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+         double resultado= hija.sumarImpares(suma);     
+ 
+       jTextField4.setText(String.valueOf(resultado)); 
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
